@@ -1,0 +1,194 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  
+  font-family: "Architects Daughter", cursive;
+  background-color: black;
+  color: #fff;
+  overflow: none;
+  
+}
+
+.container{
+  width: 100%;
+  background-color: #000000;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center;/\ */
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 45%;
+}
+
+main{
+  width: 70%;
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 30px;
+}
+
+main #clearBtn{
+  position:absolute;
+  right: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.logo-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+.logo-container span{
+  font-size: 20px;
+}
+
+.logo-container img{
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.chats{
+  list-style-type: none;
+  padding: 40px 10px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 60vh;
+  overflow-x: hidden;
+}
+
+.chats div.user{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  background: none;
+  justify-content: end;
+  /* border: 2px solid red; */
+}
+
+.chats div.user p.user{
+  background-color: #3b3b3b;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.chats div.user p.user small{
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  color: #b8b8b8;
+}
+
+
+
+.chats div.assistant{
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  background: none;
+  justify-content: baseline;
+}
+
+.chats div.assistant p.assistant{
+  background-color: #ffffff;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #3b3b3b;
+  width: 80%;
+  max-width: max-content;
+  position: relative;
+}
+
+.chats div.assistant p.assistant small{
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  color: #b8b8b8;
+}
+
+
+
+.form{
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-top: 1px solid grey;
+  padding: 10px;
+  background-color: #181818;
+
+}
+
+.form button{
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+textarea{
+  width: 85%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: #fff;
+  resize: none;
+  font-size: 20px;
+}
+
+.loader {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3b3b3b;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
