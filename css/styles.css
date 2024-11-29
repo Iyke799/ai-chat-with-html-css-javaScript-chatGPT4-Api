@@ -254,6 +254,7 @@ textarea{
 
   .chats{
     height: 70vh;
+    margin-top: 40px;
   }
   
   .chats div.assistant{
