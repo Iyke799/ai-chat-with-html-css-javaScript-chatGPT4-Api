@@ -224,20 +224,14 @@ textarea{
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    top: 10px;
     padding: 5px;
+    top: 25px;
   }
 
   main{
     width: 100%;
-    height: 87vh;
+    height: 86vh;
     border-radius:0px;
-  }
-
-  .logo-container{
-    position: fixed;
-    width: 100%;
-    left: 0;
   }
 
   .logo-container span{
@@ -253,8 +247,7 @@ textarea{
   }
 
   .chats{
-    height: 70vh;
-    margin-top: 40px;
+    height: 75vh;
   }
   
   .chats div.assistant{
