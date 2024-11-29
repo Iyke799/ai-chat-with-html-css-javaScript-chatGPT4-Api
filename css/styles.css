@@ -282,5 +282,9 @@ textarea{
     color: #e7e7e7;
     font-size: 18px;
   }
+
+  footer{
+    display: none;
+  }
   
 }
